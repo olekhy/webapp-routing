@@ -30,11 +30,11 @@ jobs:
 #      if: steps.composer-cache.outputs.cache-hit != 'true'
       run: composer install --prefer-dist --no-progress --no-suggest
 
-    # - name: Run code style check
-    #   run: composer run-script cs-check
+    - name: Run code style check
+      run: composer run-script cs-check
       
-    # - name: Run static analyse 
-    #   run: composer run-script analyse
+    - name: Run static analyse 
+      run: composer run-script analyse
       
-    # - name: Run test suite
-    #   run: composer run-script test
+    - name: Run test suite
+      run: composer run-script test
